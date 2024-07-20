@@ -5,7 +5,7 @@ This is a simple To-Do list app built using HTML, CSS, and JavaScript.
 
 The app allows any user to create a task with selecting a particular Date and time, edit and delete tasks, and also provides a feature to mark tasks as completed.
 
-📱 **Mobile App:** Included is an APK created using Apache Cordova for a better mobile experience of this web application.
+📱 **Mobile App:** Included an APK created using Apache Cordova for a better mobile experience of this web application.
 
 ## Features
 1. ✏️ Create new tasks with a description, date, and time
