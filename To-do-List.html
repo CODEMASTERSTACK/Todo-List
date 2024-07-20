@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List App</title>
+    <link rel="stylesheet" href="To-do-List-CSS.css">
+
+    <!-- Favicon for the to-do list app -->
+    <link rel="icon" type="image/x-icon" href="C:\Users\Krish\Documents\Intership Projects\sticky-note.png">
+
+
+    <!-- Using jQuery for local storage and DOM manipulation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Importing Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Dosis:400,600" rel="stylesheet">
+
+    <!-- Notification message for completed tasks -->
+    <div class="fade-message" id="fade-message">1 Task Completed!</div>
+
+    <!-- Main container for the to-do list app -->
+    <div class="container">
+        <div class="col">
+            <!-- Module for creating new tasks -->
+            <div class="module">
+                <h2>To-Do List Creator</h2>
+                <h3>Type in what you need below and press enter to add it to the list!</h3> 
+                <h3 id="date-time-text">Select Date and Time</h3>
+                <div class="date-time-container">
+                    <input id="date" type="date" value="Date">
+                    <input id="time" type="time" value="time">
+                </div>
+                <textarea id="input" placeholder="What do you need done today?"></textarea>
+                <div class="footer">
+                    <button id="post-button" type="button">
+                        <h3>Post the task</h3>
+                    </button>
+                    <button id="clear-button" type="button">
+                        <h3>Clear the List</h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <!-- Module for displaying the task list -->
+            <div class="module">
+                <h2>Task List</h2>
+                <ul id="list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="To-do-List-JS.js"></script>
+</body>
+</html>

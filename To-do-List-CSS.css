@@ -1,0 +1,293 @@
+       /* Fade message style for task completion notification */
+       .fade-message {
+        display: none;
+        position: fixed;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #28a745;
+        color: white;
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 1.5em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    /* Global box-sizing setting */
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+
+    /* Default font size for the entire document */
+    html {
+        font-size: 14px;
+    }
+
+    /* Base styles for the body */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Doris', sans-serif;
+        background-color: #999;
+    }
+
+    /* Container styles for the main layout */
+    .container {
+        display: flex;
+        height: 100vh;
+        flex-wrap: wrap;
+        padding: 10px;
+        background-color: #2357c8;
+    }
+
+    /* Column styles within the container */
+    .col {
+        flex: 1;
+        padding: 5px;
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        min-width: 300px;
+        max-width: 100vh;
+        overflow: hidden;
+    }
+
+    /* Heading styles */
+    h2 {
+        font-family: "Bungee";
+        color: #474747;
+        font-size: 2em;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    h3 {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+    }
+
+    /* List item styles */
+    li {
+        font-family: 'Dosis', sans-serif;
+        padding: 10px;
+    }
+
+    /* Hover effect for list items */
+    li:hover {
+        text-decoration: line-through;
+    }
+
+    /* Module styles for sections */
+    .module {
+        background: #4eb2ff;
+        padding: 20px;
+        border-radius: 5px;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Unordered list styles */
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow-y: auto;
+        height: 100%;
+        flex-grow: 1;
+    }
+
+    /* Input field styles */
+    #input, #date, #time {
+        margin: 60px auto 0px;
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid #999;
+        transition: box-shadow 0.3s, border 0.3s;
+    }
+
+    /* Focus effect for input fields */
+    #input:focus, #date:focus, #time:focus {
+        box-shadow: 0 0 5px 1px #999;
+    }
+
+    /* Footer styles */
+    .footer {
+        text-align: center;
+    }
+
+    /* Button styles */
+    button {
+        display: inline-block;
+        text-align: center;
+        margin: 10px auto;
+        background-color: rgb(25, 96, 218);
+        border: 1px solid #a2a2a2;
+        transition: border 0.5s, background-color 0.5s;
+    }
+
+    /* Button hover effect */
+    button:hover {
+        border: 1.3px solid #006;
+        background-color: rgb(28, 210, 43);
+    }
+
+    /* Clear button hover effect */
+    #clear-button:hover {
+        border: 1.3px solid rgba(0, 0, 0, 0.957);
+        background-color: rgb(230, 50, 50);
+    }
+
+    /* Specific styles for the input textarea */
+    #input {
+        resize: none;
+        height: 300px;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    /* Date and time container styles */
+    .date-time-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    /* Label styles within the date-time container */
+    .date-time-container label {
+        margin-right: 10px;
+        justify-content: space-between;
+    }
+
+    /* Styles for task item container */
+    .box {
+        margin: 10px auto;
+        padding: 15px;
+        font-family: 'Doris';
+        background-color: rgb(198, 198, 198);
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 0px 0px 0px #999;
+        font-size: 1em;
+        width: 80%;
+        transition: all 0.4s ease-in-out;
+    }
+
+    /* Hover effect for task items */
+    .box:hover {
+        background: #f8f9fa;
+        box-shadow: 0px 0px 5px 5px #bfbfbf;
+    }
+
+    /* Additional styles for task items */
+    .li-elem, .time-elem, .date-elem {
+        margin: 5px 10px;
+    }
+
+    /* Checkbox styles */
+    .checkbox-elem {
+        margin-right: 10px;
+    }
+
+    /* Task text styles */
+    .task-text {
+        flex-grow: 1;
+        color: rgb(0, 0, 0);
+        font-size: medium;
+    }
+
+    /* Edit and delete button styles */
+    .edit-button, .delete-button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Edit button hover effect */
+    .edit-button:hover {
+        background: #0056b3;
+    }
+
+    /* Delete button styles */
+    .delete-button {
+        background: #dc3545;
+    }
+
+    /* Delete button hover effect */
+    .delete-button:hover {
+        background: #c82333;
+    }
+
+    /* Completed task styles */
+    .completed {
+        background-color: #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    /* Completed task label */
+    .completed::before {
+        content: "COMPLETED";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    /* Responsive styles for smaller screens */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            height: auto;
+        }
+        .col {
+            flex: none;
+            width: 100%;
+        }
+        .module {
+            height: auto;
+        }
+        .date-time-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+        .date-time-container label {
+            width: auto;
+            flex-grow: 1;
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .date-time-container input {
+            width: auto;
+            flex-grow: 2;
+            margin: 0;
+        }
+        ul {
+            height: 50vh;
+            overflow-y: auto;
+        }
+    }
