@@ -1,1 +1,37 @@
-<!DOCTYPE html> <html> <head> <title>To-Do List Application</title> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> <style> body { font-family: Arial, sans-serif; } .icon { margin-right: 10px; } </style> </head> <body> <h1><i class="fas fa-list icon"></i>To-Do List Application</h1> <section> <h2><i class="fas fa-info-circle icon"></i>Introduction</h2> <p>This is a simple To-Do list app built using HTML, [CSS](https://www.blackbox.ai/?q=CSS), and [JavaScript](https://www.blackbox.ai/?q=JavaScript). The app allows any user to create a task with selecting particular Date and time, edit and delete tasks, and also provides a feature to mark tasks as completed.</p> <p><i class="fas fa-mobile-alt icon"></i>Note: I've also added the To-Do List APK created using [Apache Cordova](https://www.blackbox.ai/?q=Apache+Cordova) for a better experience on mobile devices for this web application.</p> </section> <section> <h2><i class="fas fa-list-ul icon"></i>Features</h2> <ul> <li><i class="fas fa-plus icon"></i>Create new tasks with a description, date, and time</li> <li><i class="fas fa-edit icon"></i>Edit existing tasks</li> <li><i class="fas fa-trash-alt icon"></i>Delete tasks</li> <li><i class="fas fa-check-circle icon"></i>Mark tasks as completed</li> <li><i class="fas fa-save icon"></i>Store tasks locally using local Storage</li> <li><i class="fas fa-sync icon"></i>Load tasks from local Storage when the app is loaded</li> <li><i class="fas fa-broom icon"></i>Clear all tasks and local Storage with a single button click</li> </ul> </section> <section> <h2><i class="fas fa-question-circle icon"></i>How to Use</h2> <ol> <li>Open the <code>To-Do-List.index</code> in a web browser</li> <li>Type in a task description, date, and time in the input fields</li> <li>Click the "Post" button or press Enter to add the task to the list</li> <li>Click the checkbox next to a task to mark it as completed</li> <li>Click the "Edit" button to edit a task</li> <li>Click the "Delete" button to delete a task</li> <li>Click the "Clear" button to clear all tasks and localStorage</li> </ol> </section> <section> <h2><i class="fas fa-cogs icon"></i>Technical Details</h2> <h3><i class="fas fa-desktop icon"></i>Frontend</h3> <ul> <li>The app uses HTML5, CSS3, and JavaScript (with [jQuery](https://www.blackbox.ai/?q=jQuery)) to create the user interface and functionality</li> <li>The app stores tasks in localStorage using JSON</li> <li>The app uses CSS transitions and animations to create a smooth user experience</li> <li>The app is responsive and works on desktop and mobile devices</li> </ul> <h3><i class="fas fa-mobile-alt icon"></i>Mobile App</h3> <p>Apache Cordova was used to convert the web application to a mobile Application</p> </section> <section> <h2><i class="fas fa-handshake icon"></i>Acknowledgments</h2> <p>This project was created as a part of my internship project.</p> </section> <section> <h2><i class="fas fa-book icon"></i>Resources</h2> <ul> <li><a href="https://jquery.com/" target="_blank">jQuery library</a></li> <li><a href="https://fonts.google.com/" target="_blank">[Google Fonts](https://www.blackbox.ai/?q=Google+Fonts) ([Bungee](https://www.blackbox.ai/?q=Bungee) and [Dosis](https://www.blackbox.ai/?q=Dosis) fonts)</a></li> </ul> </section> </body> </html>
+To-Do-List Application
+Introduction
+This is a simple To-Do list app built using HTML, CSS, and JavaScript.
+
+The app allows any user to create a task with selecting a particular Date and time, edit and delete tasks, and also provides a feature to mark tasks as completed.
+
+📱 Mobile App: Included is an APK created using Apache Cordova for a better mobile experience of this web application.
+
+Features
+✏️ Create new tasks with a description, date, and time
+🖊️ Edit existing tasks
+🗑️ Delete tasks
+✅ Mark tasks as completed
+📅 Store tasks locally using local Storage
+🔄 Load tasks from local Storage when the app is loaded
+🗑️ Clear all tasks and local Storage with a single button click
+How to Use
+🌐 Open the index.html in a web browser
+✍️ Type in a task description, date, and time in the input fields
+🚀 Click the "Post" button or press Enter to add the task to the list
+☑️ Click the checkbox next to a task to mark it as completed
+🖊️ Click the "Edit" button to edit a task
+🗑️ Click the "Delete" button to delete a task
+🗑️ Click the "Clear" button to clear all tasks and localStorage
+Technical Details
+💻 The app uses HTML5, CSS3, and JavaScript (with jQuery) to create the user interface and functionality
+🗄️ The app stores tasks in localStorage using JSON
+🎨 The app uses CSS transitions and animations to create a smooth user experience
+📱 The app is responsive and works on desktop and mobile devices
+📱 Apache Cordova for converting the web application to a mobile application
+Acknowledgments
+This project was created as part of my internship project.
+
+Resources used:
+
+jQuery library
+Google Fonts (Bungee and Dosis fonts)
